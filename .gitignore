@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+.venv
+.ipynb*
+*venv*
+*.db
+*.ipynb

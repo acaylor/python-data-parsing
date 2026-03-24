@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "renovate-to-db"
+version = "0.1.0"
+description = "Convert Renovate NDJSON logs into per-run SQLite databases."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+renovate-to-db = "renovate_to_db.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/renovate_to_db"]
